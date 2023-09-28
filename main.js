@@ -4,11 +4,11 @@ function catReplacer() {
     'https://shorturl.at/EKLZ8',
     'https://shorturl.at/dsVX9',
     'https://shorturl.at/dhlyS',
-    'https://shorturl.at/lDQRT',
+    'https://shorturl.at/oGSV2',
     'https://shorturl.at/cpDJS',
     'https://shorturl.at/amnKN',
     'https://shorturl.at/otxIM',
-    'https://shorturl.at/cerw5',
+    'https://shorturl.at/ltQU6',
     'https://shorturl.at/bLMT3',
     'https://shorturl.at/yzOPW',
     'https://shorturl.at/kzFNO',
@@ -23,13 +23,13 @@ function catReplacer() {
   //the local path to cat image
 
   allImages.forEach(img => {
-    img.src = catImages[Math.floor(Math.random() * (0 + 13) - 0)];
-    img.srcset = catImages[Math.floor(Math.random() * (0 + 13) - 0)];
+    img.src = catImages[Math.floor(Math.random() * (0 + 12) - 0)];
+    img.srcset = catImages[Math.floor(Math.random() * (0 + 12) - 0)];
   });
 
   moreAllImages.forEach(img => {
-    img.src = catImages[Math.floor(Math.random() * (0 + 13) - 0)];
-    img.srcset = catImages[Math.floor(Math.random() * (0 + 13) - 0)];
+    img.src = catImages[Math.floor(Math.random() * (0 + 12) - 0)];
+    img.srcset = catImages[Math.floor(Math.random() * (0 + 12) - 0)];
   });
 }
 
