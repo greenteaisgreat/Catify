@@ -16,25 +16,25 @@ function catReplacer() {
     'https://shorturl.at/aqIL1',
   ];
 
-  //get all images on page and store in an array
+  //select all images on website and store in an array
   const allImages = document.querySelectorAll('img');
+  //select all images contained in <source> tags on website
   const moreAllImages = document.querySelectorAll('source');
+
   //loop through array of site images and for each el, replace the 'src' property with
   //the local path to cat image
-
   allImages.forEach(img => {
     img.src = catImages[Math.floor(Math.random() * (0 + 12) - 0)];
     img.srcset = catImages[Math.floor(Math.random() * (0 + 12) - 0)];
   });
-
+  //same looping logic, only for <source> tags on the page
   moreAllImages.forEach(img => {
     img.src = catImages[Math.floor(Math.random() * (0 + 12) - 0)];
     img.srcset = catImages[Math.floor(Math.random() * (0 + 12) - 0)];
   });
 }
 
-// let randomNum = Math.floor(Math.random() * (1000 + 10000) - 1000);
-
+//Invoke catReplacer every 5 seconds
 setInterval(() => catReplacer(), 5000);
 
 //Possible way to run catReplacer at random intervals
@@ -42,5 +42,3 @@ setInterval(() => catReplacer(), 5000);
 //   alert('oo');
 //   setTimeout(myFunction, Math.random() * 5000)
 // }
-
-// myFunction()
