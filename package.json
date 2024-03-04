@@ -1,0 +1,16 @@
+{
+  "name": "catify",
+  "version": "1.0.0",
+  "description": "Change all images on every site to a cat!",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-html-parser": "^6.1.12"
+  }
+}
